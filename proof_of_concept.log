@@ -1,0 +1,21 @@
+╔══════════════════════════════════════════════════╗
+║     ADFS PASSWORD SPRAYING SIMULATION v2.0       ║
+║     Status: Deep Authentication Testing          ║
+╚══════════════════════════════════════════════════╝
+
+[*] Initiating Attack Vector: Password Spraying
+[*] Target Users: 4
+[*] Payload: Winter2024!
+[*] Detection Method: Body Response Pattern Matching
+------------------------------------------------------------
+[+] admin@ed.ac.uk -> Login PROCESSED (No Explicit Error Msg) - RISKY
+[+] student@ed.ac.uk -> Login PROCESSED (No Explicit Error Msg) - RISKY
+[+] staff@ed.ac.uk -> Login PROCESSED (No Explicit Error Msg) - RISKY
+[+] test@ed.ac.uk -> Login PROCESSED (No Explicit Error Msg) - RISKY
+------------------------------------------------------------
+[!] ANALISIS KERENTANAN V2: {INDONESIA VERSION}
+    - Server memproses login request tanpa memblokir IP klien.
+    - Sistem mengembalikan halaman (200 OK) meski password salah.
+    - Potensi Serangan: Brute-force dictionary attack.
+[*] BUKTI: Server menerima input kredensial secara berulang.
+[*] REKOMENDASI: Implementasi Azure AD Smart Lockout / CAPTCHA.
